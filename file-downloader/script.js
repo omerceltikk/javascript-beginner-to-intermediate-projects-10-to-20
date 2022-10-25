@@ -12,11 +12,11 @@ function fetchFile(url){
         let createUrl = URL.createObjectURL(file)
         let createElement = document.createElement("a")
         createElement.href=createUrl;
-        createElement.download=url.replace(/[<>:"/\|?*]/,"");
+        createElement.download="filename";
         document.body.appendChild(createElement);
         createElement.click();
         createElement.remove();
     }).catch(()=> {
-        alert("failed to download file")
+        alert("file can not dowloaded!")
     })
 }
