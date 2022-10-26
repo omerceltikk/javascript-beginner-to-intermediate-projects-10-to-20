@@ -24,6 +24,7 @@ function data(res,word){
             exampleArea.style="color:#8f8f8f; text-decoration:underline;"
         }else{
             exampleArea.innerText= res[0].meanings[1].definitions[0].example ? res[0].meanings[1].definitions[0].example : res[0].meanings[0].definitions[0].example 
+            exampleArea.style="color:#000000; text-decoration:none;"
         }
         synonyms.innerHTML="";
         for (let i = 0; i < 5; i++) {
